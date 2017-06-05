@@ -51,7 +51,7 @@ public class Main {
 		Calendar cal = new GregorianCalendar(2017,0,1);
 		cal.set(Calendar.MONTH, mon);
 		cal.set(Calendar.YEAR, year);
-		System.out.println("\t"+ yearString + " " + year);
+		/*System.out.println("\t"+ yearString + " " + year);
 		System.out.println("Sun Mon Tue Wed Thu Fri Sat");
 		System.out.printf(" ");
 		for (int i = 1;i<cal.get(Calendar.DAY_OF_WEEK);i++){
@@ -75,7 +75,9 @@ public class Main {
 					System.out.printf("  %d", (i+1));
 				}
 			}
-		}
+		}*/
 		//for int i = 0; i < cal.get(Calendar.DAY_OF_MONTH;i++)
+		DateUtility d = new DateUtility();
+		System.out.print(d.getLastDayOfMonth(2, 1991));
 	}
 }
